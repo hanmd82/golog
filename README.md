@@ -1,3 +1,28 @@
+### A simple place for learning Go
+
+Create a new Hugo site and download a simple theme
+```
+hugo new site golog
+
+git submodule add https://github.com/jbub/ghostwriter themes/ghostwriter
+
+git submodule init
+git submodule update
+```
+
+Set up the content folder of the site with some basic content
+```
+cd content && mkdir -p project page post resource && cd ..
+
+cp -R themes/ghostwriter/exampleSite/content/page ./content
+cp themes/ghostwriter/exampleSite/content/project/my-awesome-project.md ./content/project/my-first-project.md
+cp themes/ghostwriter/exampleSite/content/post/goisforlovers.md content/resource/go-template-primer.md
+# edit as needed
+```
+
+Configure the Hugo site
+```
+cat << EOF > config.toml
 baseurl = "/"
 title = "Go|oG"
 theme = "ghostwriter"
@@ -42,3 +67,5 @@ languageCode = "en-us"
     name = "Resources"
     url = "/resource/"
     weight = 5
+EOF
+```
