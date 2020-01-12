@@ -25,13 +25,13 @@ languageCode = "en-us"
     weight = 1
 
 [[menu.main]]
-    name = "Contact"
-    url = "/page/contact/"
+    name = "Study"
+    url = "/study/"
     weight = 2
 
 [[menu.main]]
-    name = "About"
-    url = "/page/about/"
+    name = "Practice"
+    url = "/practice/"
     weight = 3
 
 [[menu.main]]
@@ -43,3 +43,8 @@ languageCode = "en-us"
     name = "Resources"
     url = "/resource/"
     weight = 5
+
+[[menu.main]]
+    name = "About"
+    url = "/page/about/"
+    weight = 6
