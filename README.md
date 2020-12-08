@@ -1,4 +1,6 @@
-### A simple place for learning Go
+## Blog Journal and Resources for learning Go
+
+### Install
 
 Create a new Hugo site and download a simple theme
 ```
@@ -69,3 +71,11 @@ languageCode = "en-us"
     weight = 5
 EOF
 ```
+
+### Run
+
+```
+hugo server
+```
+
+Open a new web browser window and navigate to `http://localhost:1313`
