@@ -57,6 +57,7 @@ func IsPowerOfTwoBitwise(x int) bool {
 ```
 
 Notes:
+
 - Numbers which are powers of 2 have one and only one bit set in their binary representation
 - `x & (x-1)` has all the bits equal to `x` except for the rightmost `1` bit in `x`, e.g.:
   - `x`: 150 => `b(10010110)`
@@ -117,6 +118,7 @@ func NumBinaryOnesBitwise(x int) int {
 ```
 
 Notes:
+
 - Since `x & (x-1)` has all the bits equal to `x` except for the rightmost `1` bit in `x` ('flipped'),
   - increment a counter and assign `x = x & (x-1)`, until `x == 0` (i.e. all 1's have been flipped)
   - the value of the counter will be the number of 1's in the original `x`
